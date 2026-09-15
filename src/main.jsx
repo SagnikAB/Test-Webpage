@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef } from 'react'
 import { createRoot } from 'react-dom/client'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import logoSrc from '../image.png'
 import './index.css'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -16,7 +17,7 @@ const rules = [
 ]
 
 function CollegeLogo({className = ''}) {
-  return <img src="C:\Users\sagni\Downloads\s4ds-datathon-2026\s4ds-datathon-2026\image.png" alt="Adamas University logo" className={className} />
+  return <img src={logoSrc} alt="Adamas University logo" className={className} />
 }
 
 function Header(){
